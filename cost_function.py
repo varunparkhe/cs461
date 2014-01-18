@@ -30,7 +30,6 @@ def calculate_cost(X, Y, Theta):
     return cost
 
 def gradient_descent(X, Y, Theta, alpha, num_iters):
-   #Keep doing update_Theta until difference in cost function is below a threshold.  
     N = len(X) #get number of rows
     T = len(Theta)
     X = np.c_[np.ones(N), X]
