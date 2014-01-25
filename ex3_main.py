@@ -6,7 +6,7 @@ Created on Thu Jan  2 17:18:20 2014
 """
 import pylab as pl
 import numpy as np
-import functions as cf
+import ex3_functions as cf
 from sklearn import linear_model
 
 filename = 'auto-mpg.data'
