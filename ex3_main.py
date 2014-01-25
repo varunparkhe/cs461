@@ -55,8 +55,8 @@ regr.fit(X, Y)
 
 # The coefficients
 print "\nResults from sci-kit-learn's linar regression method:"
-print('Coefficients: \n', regr.coef_)
-print('Intercept : ', regr.intercept_)
+print 'Coefficients: ', regr.coef_
+print 'Intercept : ', regr.intercept_
 # The mean square error
 
 
