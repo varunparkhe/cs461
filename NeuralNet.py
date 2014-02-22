@@ -173,7 +173,7 @@ gradient = None
 
 count = 0
 cost_count = 0
-result = opt.fmin_cg(getCost, nn_params, fprime=getGrad, args = args, maxiter = 5)
+result = opt.fmin_cg(getCost, nn_params, fprime=getGrad, args = args, maxiter = 50)
 
 #extra credit
 print "Accuracy: ", forwardPropAndAccuracy(result, input_layer_size, hidden_layer_size, num_labels, X, Y)[1]
