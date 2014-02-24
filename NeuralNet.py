@@ -169,10 +169,7 @@ print "Gradient check: the two columns should be very close: ", checkGradient
 nn_params = randomInitializeWeights(np.zeros(params.shape), .12)
 
 args = (input_layer_size, hidden_layer_size, num_labels, X, Y, lambd)
-gradient = None
 
-count = 0
-cost_count = 0
 result = opt.fmin_cg(getCost, nn_params, fprime=getGrad, args = args, maxiter = 50)
 
 #extra credit
