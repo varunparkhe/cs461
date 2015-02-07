@@ -17,10 +17,9 @@ def calculate_cost(X, Y, Theta):
 
 ################## Your Code Here #############################################################################################
 # Here we will calculate the cost of a particular choice of Theta using the least squares method WITHOUT using 
-# vectorization or regularization (more on that stuff later ---vectorization will increase the efficiency of this algorithm). 
-# You will basically use a for loop and calculate the predicted value (Use the calculate_prediction function you completed)
-# value for a row in the X matrix, subtract the corresponding actual value in Y, square the result, and add to a running
-# sum. 
+# egularization (more on that stuff later ---vectorization will increase the efficiency of this algorithm). Do use 
+# vectorization.
+
 
    
    
