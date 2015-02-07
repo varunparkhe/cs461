@@ -56,8 +56,18 @@ def calculate_prediction(x_val, Theta):
     
 ############# Your Code Here ##################################################################################################
 # Calculate the predicted value of y given the feature values in x_val (which will be the features for one training example) and parameters in theta. 
-# Return the correct value for y.   
+# Return the correct value for y for a single example. 0 = died, 1 = lived.  
     
     
 ###############################################################################################################################
     return y
+    
+def calculate_accuracy(test_X, test_Y, Theta):
+    accuracy = 0 
+    
+############# Your Code Here ##################################################################################################
+# Calculate the percent your model correctly predicts
+    
+    
+###############################################################################################################################
+    return accuracy
