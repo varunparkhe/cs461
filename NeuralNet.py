@@ -153,7 +153,7 @@ params = np.concatenate([weights1.flatten(), weights2.flatten()])
 
 j, grad = costFunction(params, input_layer_size, hidden_layer_size, num_labels, X, Y, lambd)
 
-print "Cost at parameters loaded from ex4weights.mat. (This value should be about 0.383770): ", j
+print "Cost at parameters loaded from ex4weights.mat. (This value should be about 0.383770 with regularization, 0.287629 without.): ", j
 
 print "signmoidGrad of 0 (should be 0.25): ", sigmoidGradient(0)
 
