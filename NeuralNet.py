@@ -27,9 +27,9 @@ def costFunction(nn_params, *args):
     Theta2_grad to the cost, first matrix of thetas and second matrix of thetas. You don't need
     to use regularization, though there will be a 3 point b0nus if you do. 
     
-    For the y values, convert them to arrays, with a '1' in the zero index corresponding to a digit
-    value of 1 and a '1' in 9th index corresponding to a digit value of 10, with zeros in all
-    other indices. 
+    For the y values, convert them to arrays of length 10. Whatever the digit d is in the labels, 
+    put a 1 in the y vector for that sample in the d+1 index, and put a 0 in all the other indices. 
+    Do this for all the Y values.
     
     Note: you need to do an outer product when generating the capital Delta matrices in the PDF
     '''
