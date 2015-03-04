@@ -28,7 +28,8 @@ def costFunction(nn_params, *args):
     to use regularization, though there will be a 3 point b0nus if you do. 
     
     For the y values, convert them to arrays of length 10. Whatever the digit d is in the labels, 
-    put a 1 in the y vector for that sample in the d+1 index, and put a 0 in all the other indices. 
+    put a 1 in the y vector for that sample in the d-1 index (for example, if the digit is 8, put a 1
+    in the 7th index of the vector), and put a 0 in all the other indices. 
     Do this for all the Y values.
     
     Note: you need to do an outer product when generating the capital Delta matrices in the PDF
