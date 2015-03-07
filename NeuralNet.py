@@ -25,7 +25,7 @@ def costFunction(nn_params, *args):
     '''
     Instructions (15pts): implement forward and backward propogation, set J, Theta1_grad and
     Theta2_grad to the cost, first matrix of thetas and second matrix of thetas. You don't need
-    to use regularization, though there will be a 3 point b0nus if you do. 
+    to use regularization, though there will be a 3 point bonus if you do. 
     
     For the y values, convert them to arrays of length 10. Whatever the digit d is in the labels, 
     put a 1 in the y vector for that sample in the d-1 index (for example, if the digit is 8, put a 1
@@ -160,9 +160,9 @@ print "signmoidGrad of 0 (should be 0.25): ", sigmoidGradient(0)
 
 params_check = randomInitializeWeights(np.zeros(params.shape), 15)
 
-grad_check = costFunction(params_check[:35], 4, 4, 3, X[:10, :4], Y[:10, :3], lambd)[1]
-
-grad_approx =  gradApprox(params_check[:35], 4, 4, 3, X[:10, :4], Y[:10, :3], lambd)
+grad_check = costFunction(params_check[:35], 4, 4, 3, X[:10, :4], Y[:10, :], lambd)[1]
+
+grad_approx =  gradApprox(params_check[:35], 4, 4, 3, X[:10, :4], Y[:10, :], lambd)
 checkGradient = np.column_stack((grad_check, grad_approx))
 
 print "Gradient check: the two columns should be very close: ", checkGradient
